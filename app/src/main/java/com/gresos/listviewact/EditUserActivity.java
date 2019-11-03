@@ -14,7 +14,7 @@ import java.util.HashMap;
 
 public class EditUserActivity extends AppCompatActivity {
 
-    EditText etUsername, etPassword, etFullname;
+    EditText etUsername, etFullname;
     DbHelper db;
     String username, fullname;
     int formsuccess, userid;
@@ -52,7 +52,7 @@ public class EditUserActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.btnSave:
 
-                formsuccess = 3;
+                formsuccess = 2;
 
                 username = etUsername.getText().toString();
                 fullname = etFullname.getText().toString();

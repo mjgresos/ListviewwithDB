@@ -42,7 +42,7 @@ public class SignupActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.btnSave:
-                this.finish();
+
 
                 formsuccess = 3;
                 username = etUsername.getText().toString();
@@ -74,6 +74,7 @@ public class SignupActivity extends AppCompatActivity {
                     userid = db.createUser(map_user);
                     if(userid < 1) {
                         Toast.makeText(this, "USER SUCCESSFULLY CREATED", Toast.LENGTH_SHORT).show();
+                        this.finish();
                     }
                     else {
                         etUsername.setError("Username already existed");
