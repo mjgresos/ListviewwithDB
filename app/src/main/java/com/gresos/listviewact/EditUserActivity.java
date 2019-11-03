@@ -16,7 +16,7 @@ public class EditUserActivity extends AppCompatActivity {
 
     EditText etUsername, etPassword, etFullname;
     DbHelper db;
-    String username, password, fullname;
+    String username, fullname;
     int formsuccess, userid;
 
     ArrayList<HashMap<String, String>> select_user;
@@ -29,7 +29,6 @@ public class EditUserActivity extends AppCompatActivity {
         db = new DbHelper(this);
 
         etUsername = findViewById(R.id.etUsername);
-        etPassword = findViewById(R.id.etPassword);
         etFullname = findViewById(R.id.etFullname);
 
 
@@ -39,7 +38,6 @@ public class EditUserActivity extends AppCompatActivity {
         select_user = db.getSelectUser(userid);
 
         etUsername.setText(select_user.get(0).get(db.TBL_USER_USERNAME));
-        etPassword.setText(select_user.get(0).get(db.TBL_USER_PASSWORD));
         etFullname.setText(select_user.get(0).get(db.TBL_USER_FULLNAME));
     }
 

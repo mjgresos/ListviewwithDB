@@ -28,7 +28,7 @@ public class DisplayUsersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_display_user);
 
         db = new DbHelper(this);
         lvUsers = findViewById(R.id.lvUsers);
