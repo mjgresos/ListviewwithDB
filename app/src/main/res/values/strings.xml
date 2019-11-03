@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ListviewActivity</string>
+
+    <string name="hint_user">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_fullname">Full Name</string>
+</resources>
