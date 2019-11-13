@@ -119,4 +119,6 @@ public class DbHelper extends SQLiteOpenHelper {
 
         dbWritable.update(TBL_USERS, val, TBL_USER_ID + " = " + map_user.get(TBL_USER_ID), null);
     }
+
+
 }
